@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diego A. Nunnari | Work</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Graphic Designer born in Costa Rica.">
+  <meta name="keywords" content="Design, Graphic, Animation, Branding, Designer">
+  <meta name="author" content="Diego A. Nunnari">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- body-->
+<body>
+<div id="content-wrap">
+  <div id="content">
+    <h1><a href="https://nunnari.me/index.html">Diego A.<br id="space"> Nunnari</a></h1>
+    <span id="menu-hamburguer" onclick="openNav()">&#9776;</span>
+
+  <div id="container-typed">
+    <div id="typed-strings">
+    </div>
+    <span id="typed"></span>
+  </div>
+    <noscript>
+      <p id="typed">Visual Designer</p>
+    </noscript>
+
+    <!-- fullscreen nav -->
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="https://nunnari.me/about.html">ABOUT</a>
+        <a href="https://www.behance.net/diegonunnari">WORK</a>
+        <a href="https://nunnari.me/CV_DiegoAlpizarNunnari.pdf">RESUME</a>
+        <a href="https://nunnari.me/contact.html">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- main nav -->
+    <nav id="main_nav">
+      <a href="https://nunnari.me/about.html">ABOUT</a>
+      <a href="https://www.behance.net/diegonunnari">WORK</a>
+      <a href="https://nunnari.me/CV_DiegoAlpizarNunnari.pdf">RESUME</a>
+      <a href="https://nunnari.me/contact.html">CONTACT</a>
+    </nav>
+
+    <!-- footer -->
+    <footer>
+      <a href="https://www.linkedin.com/in/nunnari/"><img id="linkedinicon" style="width: 30px;height: auto;" src="linkedin-fill.png"></a>
+      <p id="copyright">2021. All rights reserved.</p>
+    </footer>
+  </div>
+</div>
+
+<!-- photo -->
+<div class="container">
+  <h2>Resume</h2>
+  <h3 class="line">Work Experience</h3>
+    <div class="accordion">Visual Designer at POP <span>Present</span></div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="accordion">Visual Designer at Electrotécnica </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="accordion">Freelance Art Director at Pictonauta</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  <h3 class="line">Education</h3>
+    <div class="accordion">Technical Degree in Computer Science</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="accordion">Bachelor's Degree in Arts and Visual Design</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+  <h3 class="line">Technical Knowledge</h3>
+    <div class="accordion">Adobe Creative Cloud</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="accordion">Microsoft Office</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+  <h3 class="line">Languages</h3>
+  <div class="accordion">English</div>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+
+</body>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<script src="https://nunnari.me/typed.js"></script>
+<script src="https://nunnari.me/effect.js"></script>
+</html>

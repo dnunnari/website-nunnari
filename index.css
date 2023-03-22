@@ -1,0 +1,179 @@
+<style>
+  html {
+    font-family: 'Montserrat';
+  }
+  body {
+    background-color: #ffffff;
+    color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+      font-weight: 700; font-size: 3.2em;
+      margin-bottom: 5px;
+      margin-top:0px;
+  }
+
+  h1 a {
+    color: black;
+    text-decoration:none;
+  }
+
+  h1 a:hover{
+    text-decoration:underline;
+    color:black;
+  }
+
+  p {
+      font-weight: 400; font-size: 0.8em;
+  }
+
+  #container-typed {
+    display: block;
+  }
+
+  noscript {
+    font-weight: 400; font-size: 2em;
+  }
+  .typed-cursor {
+    font-weight: 400; font-size: 2em;
+
+  }
+
+  #typed  {
+      font-weight: 400; font-size: 25px;
+      margin-bottom: 30px;
+  }
+
+  #main_nav {
+    display: inline-flex;
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  #main_nav a {
+    padding-top: 15px;
+    font-weight: 400; font-size: 1em;
+    color: #f06282;
+    transition: color 0.8s;
+    text-decoration-line: none;
+    padding-bottom: 3px;
+  }
+
+  #main_nav a:hover {
+      color: #7b1d6d;
+  }
+
+  #content-wrap {
+    float: left;
+    width: 40%;
+    max-height: 100vh;
+    overflow: auto;
+  }
+
+  #content {
+    padding: 40px;
+  }
+
+  img {
+    height:100vh;
+    width: 60%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0% 50%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px 150px;
+    grid-gap: 40px;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+  footer svg {
+    padding-bottom:30px;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 900px) {
+      img {
+      object-fit: cover;
+      object-position: 0% 50%;
+      }
+  }
+
+  @media screen and (max-width: 728px) {
+    body {
+      font-size: .9em;
+    }
+
+
+    #content {
+      padding: 30px;
+            overflow: auto;
+    }
+    #main_nav {
+      display: inline-flex;
+      padding-top: 15px;
+      flex-direction: row;
+    }
+
+    #main_nav a {
+      padding-top: 10px;
+      padding-right: 30px;
+      font-size: 1.2em;
+    }
+
+    img {
+      position: fixed;
+      bottom: 0;
+      left:0;
+      width:auto;
+      height: 65%;
+      object-position: 5px 40px;
+    }
+
+    #content-wrap {
+      float: left;
+      width: 100%;
+
+    }
+
+    #linkedinicon {
+      position: fixed;
+      top:30px;
+      right:20px;
+    }
+
+    footer p{
+      display: none;
+    }
+
+    footer {
+      padding-top:0;
+      float:right;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    body {
+      font-size: .8em;
+    }
+    #main_nav {
+      padding-top: 15px;
+    }
+}
+</style>
+</head>
